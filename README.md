@@ -12,13 +12,23 @@ xxx
 ## System Requirements
 ### Hardware requirements
 We suggest using a atandard computer with enough GPU memory (At least 6 GB, e.g. NVIDIA RTX3090) to load the model.
-### Software requirements and Installation guide
+### Software requirements
 In this work, ResShift, the diffusion model was employed to build the variant model. Therefore, software requiredments should be consistent with ResShift. Including: Python 3.10, Pytorch 2.1.2, NVIDIA GPU + CUDA, Linux. Please see the major requirements from ResShift[https://github.com/zsyOAOA/ResShift].
+### Installation guide
+1. Download ResShift from Github[https://github.com/zsyOAOA/ResShift].
+2. Setup environment
+   ```
+   conda create -n resshift python=3.10
+   conda activate resshift
+   pip install -r requirements.txt
+   ```
+3. Download MSI_SR and put files and directories into ResShift folder.
+4. Download weights, unzipped, and put the directory into ResShift folder.
 
 ## Demo
-1. The find-tuned model is released as v1.0.0, and the DEMO Low-Resolution images are in the images/test/folder.
-2. Modify the config file in options/test/test_ResShift.yml, and make sure the correct paths for both the image and model.
+1. The find-tuned model is released as v1.0.0, and the DEMO Low-Resolution images are in the testdata/folder.
+2. Modify the shell file named as run.sh, and make sure the correct paths for both the input low-resolution image directory.
 3. Inference. Run the following command, and the images are reconstructed in less than one minute. The test.py is in the directory of ResShift.
    ```
-   python
+   sh run.sh
    ```
