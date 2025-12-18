@@ -1,13 +1,12 @@
 # MSI_SR
 Enhancing super-resolution for mass spectrometry imaging via deep learning methods
 
-While mass spectrometry imaging (MSI) can show this distribution, its current resolution often falls short. For super resolution(SR) tasks,we selected the diffusion model from Based on the investigavtion of for SR tasksfor diffusion model, transformation model and mamba model, we select create a a fine-tuned model was trained from ResShift.
-
+three deep learning based super-resolution models, SwinIR, MambaIR, and ResShift, were compared with MOSR serving as a control. The evaluation based on three MSI datasets and six quality metrics, indicated that MOSR and a bicubic pre-trained model of ResShift (ResShift_B) were more proficient in capturing complex textures. The MSI_SR model was fine-tuned based on the ResShift_B model using only a few mouse brain sagittal images. Generalization performance on other MSI images demonstrate that the fine-tuned model, trained on a small dataset, can be effectively applied to images of different tissues, holding great potential for various applications in the MSI-related research.
 
 <div align="center"> <img src="https://github.com/bioinfo-ibms-pumc/MSI_SR/blob/main/workflow.png"> </div>
 
 ## Introduction
-xxx
+A high spatial resolution understanding of metabolite distribution is crucial for revealing biological mechanisms and disease biomarkers. While mass spectrometry imaging (MSI) can show this distribution, its current resolution often falls short. Existing images lack precision for fine-scale molecular variations and data acquisition is time-consuming. Thus, developing super-resolution models for MSI is essential to address this challenge.
 
 ## System Requirements
 ### Hardware requirements
