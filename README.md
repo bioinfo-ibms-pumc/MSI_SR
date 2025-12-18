@@ -1,5 +1,5 @@
 # MSI_SR
-## Enhancing super-resolution for mass spectrometry imaging via deep learning methods
+### Enhancing super-resolution for mass spectrometry imaging via deep learning methods
 
 Three deep learning based super-resolution models, SwinIR, MambaIR, and ResShift, were compared with MOSR serving as a control. The evaluation based on three MSI datasets and six quality metrics, indicated that MOSR and a bicubic pre-trained model of ResShift (ResShift_B) were more proficient in capturing complex textures. The MSI_SR model was fine-tuned based on the ResShift_B model using only a few mouse brain sagittal images. Generalization performance on other MSI images demonstrate that the fine-tuned model, trained on a small dataset, can be effectively applied to images of different tissues, holding great potential for various applications in the MSI-related research.
 
